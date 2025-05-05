@@ -2,30 +2,50 @@
 <html lang="fi">
 <head>
     <meta charset="UTF-8">
-    <title>Tervetuloa</title>
+    <title>Etusivu</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        .container {
+            display: flex;
+            flex-direction: row;
+        }
+        .sidebar {
+            width: 200px;
+            background-color: #004b80;
+            padding: 1em;
+            height: 100vh;
+        }
+        .sidebar a {
+            display: block;
+            color: white;
+            padding: 10px;
+            margin-bottom: 10px;
+            text-decoration: none;
+            background-color: #005b96;
+            border-radius: 5px;
+        }
+        .sidebar a:hover {
+            background-color: #003b66;
+        }
+        .content {
+            flex: 1;
+            padding: 2em;
+        }
+    </style>
 </head>
 <body>
 <header>
-    <h1>Tervetuloa huoltopalveluihini</h1>
+    <h1>Tervetuloa</h1>
 </header>
-
-<nav>
-    <ul>
-        <li><a href="index.html">Etusivu</a></li>
-        <li class="dropdown">
-            <a href="#" class="dropbtn">Palvelut</a>
-            <div class="dropdown-content">
-                <a href="ilmalampopumppu.html">Ilmalämpöpumpun pesu</a>
-                <a href="autohuollot.html">Autohuollot</a>
-            </div>
-        </li>
-    </ul>
-</nav>
-
-<main>
-    <p>Olen Miko Tolvanen, 18-vuotias reipas ja rehti tekijä Livonsaarelta. Tarjoan ilmalämpöpumpun pesua ja kattavia autohuoltopalveluita lähialueella.</p>
-</main>
+<div class="container">
+    <div class="sidebar">
+        <a href="ilmalampopumppu.html">Ilmalämpöpumpun pesu</a>
+        <a href="autohuollot.html">Autohuollot</a>
+    </div>
+    <div class="content">
+        <p>Olen <strong>Miko Tolvanen</strong>, 18-vuotias reipas ja rehti tekijä Livonsaarelta. Tarjoan ilmalämpöpumpun pesua ja monipuolisia autohuoltopalveluita lähialueella. Selaa vasemman puolen valikosta palveluihini!</p>
+    </div>
+</div>
 <footer>
     <div class="contact-box">
         <h3>Ota yhteyttä</h3>
