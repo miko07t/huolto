@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <title>Ikkunanpesu</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .container {
+            display: flex;
+            flex-direction: row;
+        }
+        .sidebar {
+            width: 200px;
+            background-color: #004b80;
+            padding: 1em;
+            height: 100vh;
+        }
+        .sidebar a {
+            display: block;
+            color: white;
+            padding: 10px;
+            margin-bottom: 10px;
+            text-decoration: none;
+            background-color: #005b96;
+            border-radius: 5px;
+        }
+        .sidebar a:hover {
+            background-color: #003b66;
+        }
+        .content {
+            flex: 1;
+            padding: 2em;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <h1>Ikkunanpesu</h1>
+</header>
+<div class="container">
+    <div class="sidebar">
+        <a href="index.html">Etusivu</a>
+        <a href="ilmalampopumppu.html">Ilmalämpöpumpun pesu</a>
+        <a href="autohuollot.html">Autohuollot</a>
+    </div>
+    <div class="content">
+        <h2>Palvelu</h2>
+        <p>Tarjoan ikkunoiden pesua kotitalouksille ja pienyrityksille.</p>
+        
+        <h2>Hinnasto</h2>
+        <ul>
+            <li>Yksi pieni ikkunapinta: <strong>5 €</strong></li>
+            <li>Yksi iso ikkunapinta: <strong>10 €</strong></li>
+        </ul>
+        
+        <h2>Hyödyt</h2>
+        <ul>
+            <li>Enemmän valoa sisälle</li>
+            <li>Puhtaat ikkunat parantavat asumisviihtyvyyttä</li>
+            <li>Näet selkeämmin ulos</li>
+        </ul>
+    </div>
+</div>
+<footer>
+    <div class="contact-box">
+        <h3>Ota yhteyttä</h3>
+        <p>Puhelin: 040 160 2192</p>
+    </div>
+</footer>
+</body>
+</html>
